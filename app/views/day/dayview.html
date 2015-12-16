@@ -1,0 +1,26 @@
+<div class="jumbotron text-center">
+	<h1>In Detail Weather</h1>
+    
+    <p> Here is a more detailed look at the weather </p>
+        
+    
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>High Temp</th>
+                <th>Low Temp</th>
+                <th>Weather Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr data-ng-repeat="day in days | filter:searchText">
+                <td>{{day.day}} {{day.date}}</td>
+                <td>{{day.high}}&#8457;</td>
+                <td>{{day.low}}&#8457;</td>
+                <td>{{day.text}}</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</div>	

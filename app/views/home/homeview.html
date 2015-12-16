@@ -1,0 +1,30 @@
+<div class="jumbotron text-center">
+    <h1>Weather Overview</h1>
+    
+    <p>{{ message }}</p>
+    
+    <p>{{weather.title}}</p>
+        
+    <p>Temperature - {{weather.condition.temp}}&#8457;</p>
+        
+    <p>Condition - {{weather.condition.text}} </p>
+        
+    
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>High Temp</th>
+                <th>More?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr data-ng-repeat="day in days">
+                <td>{{day.day}}</td>
+                <td>{{day.high}}&#8457;</td>
+                <td><a href="#daycode/{{day.day}}">more</a></td>
+            </tr>
+        </tbody>
+    </table>
+        
+</div>	

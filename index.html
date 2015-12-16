@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<!-- define angular app -->
+<html>
+
+<head>
+  <!-- SCROLLS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+
+
+</head>
+
+<!-- define angular controller -->
+<body ng-controller="mainController" ng-app="weatherApp">
+
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Angular Weather App</a>
+      </div>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="main">
+  
+    <!-- angular templating -->
+		<!-- this is where content will be injected -->
+    <div ng-view></div>
+   
+
+  </div> 
+  
+  <footer class="text-center">
+    <p>Visit <a href="https://uk.weather.yahoo.com/" target="_blank">Yahoo</a> for more weather updates</p>
+  
+    <p>Wishing you all a very Merry Christmas</p>
+  </footer>
+  
+</body>
+
+  <!-- Scripts -->
+  <script src="assets/js/angular.min.js"></script>
+  <script src="assets/js/angular-route.js"></script>
+  <script src="app/script.js"></script>
+  <script src="app/components/daycontroller.js"></script>
+  <script src="app/components/daycontroller.js"></script>
+
+</html>
